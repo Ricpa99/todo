@@ -12,7 +12,7 @@ export default function Header({children, title, user}) {
             <div className="logo"><Link as="button" href='/'>myLogo</Link></div>
             <nav className="md:[&>ul]:flex md:[&>ul>li]:mx-3">
                <ul>
-                  <li className={`${title == 'Blog' || title == 'Edit' ? 'text-indigo-400' : false }`}><Link href='/blog'>Blog</Link></li>
+                  <li className={`${title == 'Blog' || title == 'Edit' ? 'text-indigo-400' : false }`}><Link href='/blog'>Todo</Link></li>
                   <li className={`${title == 'Dashboard' ? 'text-indigo-400' : false }`}>{user ? <Link href="/dashboard">Dashboard</Link> : ''}</li>
                   <li>{user ?  <Link method="post" href={route('logout')} as="button">
                                 Log Out

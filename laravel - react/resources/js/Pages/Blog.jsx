@@ -50,7 +50,7 @@ export default function Test({blogs, title, auth}){
       <Head title={title}></Head>
       <Header user={auth.user} title={title}>
          <div className="max-w-3xl mx-auto lg:w-5/6 md:max-w-7xl w-4/5 mt-20 ">
-            <h2 className="font-semibold text-4xl text-center my-6" >Blog </h2>
+            <h2 className="font-semibold text-4xl text-center my-6" >Todo</h2>
             <Modal></Modal>
          <form onSubmit={submit}>
             <div className="flex gap-4 items-center">
