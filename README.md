@@ -7,4 +7,4 @@ Aplikasi Todo list berbasis **Laravel (Backend)** dan **React (Frontend)** untuk
 - **UI Responsif**: menggunkan react dan tailwindcss untuk styling tampilan UI Todo App
 
 ## 📸 Screenshot
-![image alt](https://github.com/Ricpa99/todo/blob/d6deaec146e535d1f9c3ad3601f88d9217d39a5b/laravel%20-%20react/img/home.png)
+![image alt](https://github.com/Ricpa99/todo/blob/d766045e8b1a79bfd11891187bd5d8cff01a1337/laravel%20-%20react/img/register.png)
