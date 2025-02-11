@@ -27,4 +27,6 @@ cd todo-app
 jalankan perintah
 - php artisan migrate -> untuk mejalankan migrasi database
 - php artisan serve   -> untuk menjalankan laravel
-- npm run dev         -> untuk menjalan frontend react
+- npm run dev         -> untuk menjalan frontend react ```sh
+
+lorem
