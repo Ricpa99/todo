@@ -3,7 +3,7 @@ Aplikasi Todo list berbasis **Laravel (Backend)** dan **React (Frontend)** untuk
 
 ## Fitur
 - **CRUD Todo**: Tambah, ubah,hapus dan lihat daftar tugas
-- **Autentifikasi User**: melakukan login atau regitser terlebih dahulu agar bisa mengakses Todo App\
+- **Autentifikasi User**: melakukan login atau regitser terlebih dahulu agar bisa mengakses Todo App
 - **UI Responsif**: menggunkan react dan tailwindcss untuk styling tampilan UI Todo App
 
 ## 📸 Screenshot
