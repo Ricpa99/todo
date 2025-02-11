@@ -1,4 +1,4 @@
-# Todo App -Laravel & React
+# Todo App - Laravel & React
 Aplikasi Todo list berbasis **Laravel (Backend)** dan **React (Frontend)** untuk mencatat daftar list harian buku atau tugas harian
 
 ## Fitur
