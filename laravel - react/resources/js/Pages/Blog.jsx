@@ -11,7 +11,6 @@ import { MdModeEdit } from "react-icons/md";
 import { IoTrashBinSharp } from "react-icons/io5";
 
 
-
 export default function Test({blogs, title, auth}){
    const {flash} = usePage().props
    const [showPopup, setPopup] = useState(false)

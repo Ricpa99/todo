@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Checkbox from '@/Components/Checkbox';
 import GuestLayout from '@/Layouts/GuestLayout';
 import InputError from '@/Components/InputError';
@@ -7,10 +7,14 @@ import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
 
 import GeneralLayout from "@/Layouts/GeneralLayout";
-import { Head, useForm, Link, } from '@inertiajs/react';
+import { Head, useForm, Link, usePage, } from '@inertiajs/react';
 
 
 export default function Login({canResetPassword, status}){
+    const {flash} = usePage().props
+    const [getdata, setdata] = useState(1)
+
+    console.log(flash.message);
     const { data, setData, errors, processing, reset, post} = useForm({
         email: '',
         password: '',
@@ -32,6 +36,13 @@ export default function Login({canResetPassword, status}){
         <>
         <Head title={'login'}/>
         <GeneralLayout>
+            {/* {flash.message} */} 
+            <p className={`${!flash.message ? 'hidden' : ''} ${!getdata && 'hidden'}
+            text-sm rounded-lg items-center p-2 text-center 
+            flex justify-between font-medium mb-5 max-sm:text-sm
+             bg-slate-300 max-w-xs ml-6`}>
+                {flash.message} 
+            <button onClick={() => setdata(0)} className={`float-right text-red-400 font-bold text-xl inline-flex`}>x </button></p>
                 <h1 className="text-center text-3xl font-bold mb-5">Login</h1>
             <form onSubmit={submit}>
             <div>

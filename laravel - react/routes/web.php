@@ -20,7 +20,7 @@ Route::get('/welcome', function () {
 Route::middleware('auth')->group(function(){
     Route::get('/todo', [HomeController::class, 'todo'])->name('blog');
     Route::get('/blog/edit/{blog}', [HomeController::class, 'edit'])->name('blog.edit');
-    Route::get('/dashboard',[HomeController::class, 'dashboard'])->name('dashboard');
+    Route::get('/dashboard',[HomeController::class, 'todo'])->name('dashboard');
     Route::post('/storedata', [IndexController::class, 'store'])->name('store.data');
     Route::patch('/update/{id}', [HomeController::class, 'update'])->name('blog.update');
     Route::patch('/update-complete/{id}', [HomeController::class, 'updateComplete'])->name('blog.complete');

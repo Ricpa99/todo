@@ -51,11 +51,6 @@ class HomeController extends Controller
         ]);
     }
 
-    public function dashboard(){
-        return Inertia::render('Dashboardd', [
-            'title' => 'Dashboard'
-        ]);
-    }
 
     public function login(){
         return Inertia::render('Auth/Login', [
