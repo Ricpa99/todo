@@ -12,3 +12,19 @@ Melakukan register
 
 Setelah malukan register akan menuju halaman login dan masuk ke Halaman Todo App
 ![image alt](https://github.com/Ricpa99/todo/blob/6991821e0214d2269208a4741fd170f920ed7aa8/laravel%20-%20react/img/home.png)
+
+## Tech yang di gunakan
+- composer
+- npm
+- node.js
+- xampp
+
+## 🔧 Instalasi & Menjalankan
+### **1. Clone Repository**
+```sh
+git clone https://github.com/Ricpa99/todo.git
+cd todo-app
+jalankan perintah
+- php artisan migrate -> untuk mejalankan migrasi database
+- php artisan serve   -> untuk menjalankan laravel
+- npm run dev         -> untuk menjalan frontend react
