@@ -29,7 +29,3 @@ jalankan perintah
 - php artisan serve   -> untuk menjalankan laravel
 - npm run dev         -> untuk menjalan frontend react
 ```
-
-
-
-oklku
