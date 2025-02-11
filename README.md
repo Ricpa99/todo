@@ -12,7 +12,9 @@ Melakukan register
 
 Setelah malukan register akan menuju halaman login
 ![image alt](https://github.com/Ricpa99/todo/blob/6991821e0214d2269208a4741fd170f920ed7aa8/laravel%20-%20react/img/register%20sukses.png)
+
 login dengan nama email yang sudah di daftarkan
 ![image alt](https://github.com/Ricpa99/todo/blob/6991821e0214d2269208a4741fd170f920ed7aa8/laravel%20-%20react/img/login.png)
+
 Halaman Todo App
 ![image alt](https://github.com/Ricpa99/todo/blob/6991821e0214d2269208a4741fd170f920ed7aa8/laravel%20-%20react/img/home.png)
