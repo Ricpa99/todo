@@ -1,5 +1,5 @@
 # Todo App - Laravel & React
-Aplikasi Todo list berbasis **Laravel (Backend)** dan **React (Frontend)** untuk mencatat daftar list harian buku atau tugas harian
+Aplikasi Todo list berbasis **Laravel (Backend)** dan **React (Frontend)** untuk mencatat daftar list harian buku atau tugas harian. saya menggunakan eksosistem laravel yaitu breeze agar dapat menginstal react sebagai frontend.
 
 ## Fitur
 - **CRUD Todo**: Tambah, ubah,hapus dan lihat daftar tugas
