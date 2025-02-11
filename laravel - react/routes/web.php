@@ -18,7 +18,7 @@ Route::get('/welcome', function () {
     ]);
 });
 Route::middleware('auth')->group(function(){
-    Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
+    Route::get('/todo', [HomeController::class, 'todo'])->name('blog');
     Route::get('/blog/edit/{blog}', [HomeController::class, 'edit'])->name('blog.edit');
     Route::get('/dashboard',[HomeController::class, 'dashboard'])->name('dashboard');
     Route::post('/storedata', [IndexController::class, 'store'])->name('store.data');

@@ -28,7 +28,7 @@ export default function Test({title, respon, auth}){
       <Head title={title}></Head>
       <Header user={auth.user} title={title}>
          <div className="max-w-3xl mx-auto lg:w-5/6 mt-20 md:max-w-7xl w-4/5">
-            <h2 className="font-semibold text-4xl text-center my-6" >Edit Blog {respon.name}</h2>
+            <h2 className="font-semibold text-4xl text-center my-6" >Edit Todo {respon.name}</h2>
          <form onSubmit={submit}>
             <div className="flex gap-4 items-center">
             <input name="name" className="px-4 py-2 rounded-md grow font-bold text-sm"  type="text"

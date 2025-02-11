@@ -15,7 +15,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Welcome', [
+        return Inertia::render('Auth/Login', [
             'test' => 'myblog'
         ]);
     }
@@ -36,15 +36,14 @@ class IndexController extends Controller
 
         // return $request->all();
         $validated = $request->validate([
-            'name' => 'required|min:2|max:7|string',
+            'name' => 'required|min:2|max:15|string',
             'is_complete' => ''
         ],
         [
             'name.string' => 'tidak bole angka',
             'name.required' => 'nama tidak bole kosong',
             'name.min'  => 'min 2 karakter',
-            'name.max' => 'max 5 karakter',
-
+            'name.max' => 'max 15 karakter',
         ]
         );
 

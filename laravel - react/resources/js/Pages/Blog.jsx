@@ -5,7 +5,10 @@ import Pagination from "@/Components2/Pagination";
 import { useState } from "react";
 import Modal from "@/Components/Modal";
 import Popup from "@/Components2/Popup";
-
+import { FaCheck } from "react-icons/fa6";
+import { MdRadioButtonUnchecked } from "react-icons/md";
+import { MdModeEdit } from "react-icons/md";
+import { IoTrashBinSharp } from "react-icons/io5";
 
 
 
@@ -51,13 +54,13 @@ export default function Test({blogs, title, auth}){
       <Header user={auth.user} title={title}>
          <div className="max-w-3xl mx-auto lg:w-5/6 md:max-w-7xl w-4/5 mt-20 ">
             <h2 className="font-semibold text-4xl text-center my-6" >Todo</h2>
-            <Modal></Modal>
+            {/* <Modal></Modal> */}
          <form onSubmit={submit}>
             <div className="flex gap-4 items-center">
             <input name="name" className="px-4 py-2 rounded-md grow font-bold text-sm"  type="text"
             value={data.name}
             onChange={(e) => setData('name', e.target.value)} 
-            placeholder="Create blog"/>
+            placeholder="Create todo list"/>
             <button className="bg-purple-600 py-2 px-4 rounded-md text-white hover:bg-purple-500">Save</button>
             </div>
             {errors.name && <p className="text-red-400 txt-sm">{errors.name}</p>}
@@ -67,19 +70,19 @@ export default function Test({blogs, title, auth}){
                {
                   blogs.data.map((ev, i) => {
                      return (
-                           <div key={i} className={`${ev.is_complete ? 'bg-green-300' : 'bg-neutral-200'} flex justify-between items-center py-3 px-6 rounded-md`}>
+                           <div key={i} className={`max-md:text-sm ${ev.is_complete ? 'bg-green-300' : 'bg-neutral-200'} flex justify-between items-center py-3 px-6 rounded-md`}>
                               <h3 id={ev.id}>{ev.name}</h3>
                               <div> {ev.is_complete ? (
                                  <button disabled={processing} className={`${processing && 'opacity-25 cursor-not-allowed' }`}
-                                 onClick={() => hendleStatus(ev.id, ev.is_complete, ev.name)}> Uncheck </button> ) 
+                                 onClick={() => hendleStatus(ev.id, ev.is_complete, ev.name)}> <FaCheck /> </button> ) 
                                  : (
                                  <button disabled={processing} className={`${processing && 'opacity-25 cursor-not-allowed' }`}
                                  onClick={() => hendleStatus(ev.id, ev.is_complete, ev.name)}> 
-                                 check
+                                 <MdRadioButtonUnchecked />
                                  </button> )}
-                                 <Link href={`/blog/edit/${ev.id}`}> edit | </Link>  
+                                 <Link className={`${processing && 'opacity-25 cursor-not-allowed' } inline-flex mx-3`} href={`/blog/edit/${ev.id}`}> <MdModeEdit/> </Link>  
                                  <button className={`${showPopup && 'text-slate-50 cursor-not-allowed'}`} type="button" 
-                                 disabled={showPopup} onClick={() => popup(ev.id, ev.name)}> Hapus</button>
+                                 disabled={showPopup} onClick={() => popup(ev.id, ev.name)}> <IoTrashBinSharp /></button>
                                </div>
                          </div>
                         

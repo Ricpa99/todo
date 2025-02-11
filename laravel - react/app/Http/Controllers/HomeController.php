@@ -44,10 +44,10 @@ class HomeController extends Controller
         ]);
     }
 
-    public function blog(){
+    public function todo(){
         return Inertia::render('Blog', [
-            'title' => 'Blog',
-            'blogs' => Blog::paginate(2)
+            'title' => 'Todo',
+            'blogs' => Blog::latest()->paginate(2)
         ]);
     }
 
